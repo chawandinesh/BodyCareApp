@@ -163,6 +163,7 @@ export function ShowDetails({navigation, route}) {
     <View style={{height, width}}>
       <View
         style={{
+          marginTop: HEIGHT,
           flexDirection: 'row',
           backgroundColor: '#245b96',
           justifyContent: 'space-between',
@@ -214,7 +215,6 @@ export function ShowDetails({navigation, route}) {
         <View
           style={{
             backgroundColor: '#f5fcff',
-            marginTop: HEIGHT,
             height: height * 0.9,
             width: width,
             alignItems: 'center',

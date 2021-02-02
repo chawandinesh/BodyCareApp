@@ -140,6 +140,7 @@ export function ViewDetails({navigation, route}) {
       <View
         style={{
           flexDirection: 'row',
+          marginTop: HEIGHT,
           backgroundColor: '#245b96',
           justifyContent: 'space-between',
           alignItems: 'center',

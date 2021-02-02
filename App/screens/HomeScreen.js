@@ -6,6 +6,7 @@ import {
   NativeModules,
   Image,
   TouchableOpacity,
+  ImageBackground,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import MobileNeed from '../assets/mobileneed.svg';
@@ -16,8 +17,8 @@ const WIDTH = 20;
 // console.log(height, width, HEIGHT, WIDTH);
 export function HomeScreen({navigation}) {
   return (
-    <LinearGradient
-      colors={['#8d19fa', '#000']}
+    <ImageBackground
+      source={require('../assets/mainimage.png')}
       style={{height: height, width: width}}>
       <View style={{flex: 2, alignItems: 'flex-end', justifyContent: 'center'}}>
         <Text
@@ -115,6 +116,6 @@ export function HomeScreen({navigation}) {
           </Text>
         </TouchableOpacity>
       </View>
-    </LinearGradient>
+    </ImageBackground>
   );
 }
