@@ -206,6 +206,7 @@ export function ShowDetails({navigation, route}) {
         <View
           style={{
             backgroundColor: '#f5fcff',
+            marginTop: HEIGHT,
             height: height * 0.9,
             width: width,
             alignItems: 'center',

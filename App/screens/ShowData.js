@@ -15,7 +15,7 @@ export function ShowData({navigation, route}) {
   const {data} = route.params;
   console.log(data, 'data...');
   return (
-    <View style={{height, width}}>
+    <View style={{height, width, marginTop: HEIGHT}}>
       <View
         style={{
           flexDirection: 'row',

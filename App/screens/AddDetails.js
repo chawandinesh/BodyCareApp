@@ -54,9 +54,10 @@ export function AddDetails({navigation, route}) {
     detailsOfProduct: '',
     instructions: '',
     image: '',})
+    navigation.goBack()
   }
   return (
-    <KeyboardAwareScrollView>
+    <KeyboardAwareScrollView style={{marginTop: HEIGHT}}> 
       <View
         style={{
           flexDirection: 'row',

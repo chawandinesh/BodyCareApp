@@ -88,7 +88,7 @@ export function CategoriesScreen({navigation}) {
     );
   };
   return (
-    <View style={{height: height, width: width}}>
+    <View style={{height: height, width: width, marginTop: HEIGHT}}>
       <View
         style={{
           flexDirection: 'row',
