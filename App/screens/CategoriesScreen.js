@@ -36,7 +36,7 @@ export function CategoriesScreen({navigation}) {
             justifyContent: 'center',
             borderWidth: 3,
             marginTop: height * 0.01,
-            marginBottom: height * 0.03,
+            marginBottom: height * 0.01,
           }}>
           <View
             style={{
