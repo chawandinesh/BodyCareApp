@@ -4,4 +4,5 @@ export {AddDetails} from './AddDetails';
 export {ShowDetails} from './ShowDetails';
 export {ViewDetails} from './ViewDetails';
 export {ShowData} from './ShowData';
+export {AboutUs} from './AboutUs'
 

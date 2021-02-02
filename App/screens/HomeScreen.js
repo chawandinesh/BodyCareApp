@@ -95,6 +95,7 @@ export function HomeScreen({navigation}) {
         </TouchableOpacity>
 
         <TouchableOpacity
+          onPress={() => navigation.navigate('AboutUs')}
           style={{
             width: width * 0.6,
             alignItems: 'center',

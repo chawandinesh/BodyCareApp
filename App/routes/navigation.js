@@ -9,6 +9,7 @@ import {
   ShowData,
   ShowDetails,
   ViewDetails,
+  AboutUs
 } from '../screens';
 
 const Stack = createStackNavigator();
@@ -22,6 +23,7 @@ export default function Navigation() {
         <Stack.Screen name="ShowData" component={ShowData} />
         <Stack.Screen name="ShowDetails" component={ShowDetails} />
         <Stack.Screen name="ViewDetails" component={ViewDetails} />
+        <Stack.Screen name="AboutUs" component={AboutUs}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
