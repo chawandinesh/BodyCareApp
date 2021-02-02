@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import {Icon} from 'react-native-elements';
 import {DailyBodyCareContext} from '../screens/Context';
+import {useIsFocused} from '@react-navigation/native';
 import Empty from '../assets/empty.svg';
 const {StatusBarManager} = NativeModules;
 const {HEIGHT} = StatusBarManager;
@@ -18,6 +19,13 @@ export function ShowDetails({navigation, route}) {
   const {state, setState} = React.useContext(DailyBodyCareContext);
   const dataProp = 'ksj';
   const {data} = route.params;
+
+
+  const isFocused = useIsFocused();
+  const getInitialData = async () => {};
+  React.useEffect(() => {
+    getInitialData();
+  }, [navigation, isFocused]);
 
   const renderItem = ({item}) => {
     return (
@@ -29,7 +37,7 @@ export function ShowDetails({navigation, route}) {
           alignSelf: 'center',
         }}>
         <TouchableOpacity
-          onPress={() => navigation.navigate('ShowData', {data: item})}
+          onPress={() => navigation.navigate('AddDetails', {formData: item, data: data})}
           style={{
             width: width * 0.8,
             borderBottomWidth: 6,

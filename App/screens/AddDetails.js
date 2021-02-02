@@ -20,8 +20,8 @@ export function AddDetails({navigation, route}) {
     DailyBodyCareContext
   )
   // console.log(state,setState)
-  const {data} = route.params
-  console.log(data,'data...props')
+  const {data, formData} = route.params
+  // console.log(data,formData,state,'data..')
   const [formState, setFormState] = React.useState({
     bodyParts: '',
     careProducts: '',
@@ -45,9 +45,22 @@ export function AddDetails({navigation, route}) {
       });
   };
 
+  React.useEffect(() => {
+    if(formData){
+      setFormState(formData)
+    }
+  }, [])
+
   const handleSubmit = () => {
-    // console.log(formState, state[data])
-    setState({...state, [data]: [...state[data], formState]})
+    if(formData){
+    const index = state[data].findIndex(e => e.bodyParts === formData.bodyParts);
+    [...state[data].splice(index,1,formState)]
+    setState(state)
+
+    }else{
+      setState({...state, [data]: [...state[data], formState]})
+
+    }
     setFormState({ bodyParts: '',
     careProducts: '',
     frequencyOfUse: '',
@@ -81,7 +94,10 @@ export function AddDetails({navigation, route}) {
               fontWeight: 'bold',
               color: '#fff',
             }}>
-            Add Details
+              {
+                formData ? <Text>Edit Details</Text>
+                : <Text>Add Details</Text>
+              }
           </Text>
         </View>
         <View>
