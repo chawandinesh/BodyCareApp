@@ -202,7 +202,7 @@ export function ViewDetails({navigation, route}) {
                 margin: width * 0.05,
               }}>
               <Text style={{fontSize: height * 0.04, fontWeight: 'bold'}}>
-                Nothing to show, Please Click on '+' to add items
+                Nothing to show, Please Click on '+' to add items in categories page
               </Text>
             </View>
           </View>

@@ -42,36 +42,54 @@ export function AboutUs({navigation}) {
             About Us
           </Text>
         </View>
-        <View>
-          
-        </View>
-
+        <View></View>
       </View>
-      <View style={{width: width, height: height * 0.8 , justifyContent:'center', alignItems:'center'}}>
-              <Text style={{fontWeight:'bold',fontSize: 22, color:'#81f', width: width, textAlign:'center'}}>
-              "Love your body and let your body love you".
+      <View
+        style={{
+          width: width,
+          padding: height * 0.02,
+          margin: 5,
+          height: height * 0.8,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <Text
+          style={{
+            fontWeight: 'bold',
+            fontSize: 22,
+            color: '#81f',
+            width: width,
+            textAlign: 'center',
+          }}>
+          "Love your body and let your body love you".
+        </Text>
+          <Text
+            style={{
+              fontSize: 19,
+              fontWeight: 'bold',
+              width: width,
+              textAlign: 'center',
+            }}>
+            This is easy to use, amazing, and ads-free app to help you take care
+            of your body in one place.
+          </Text>
+          <Text style={{fontSize: 22, fontWeight: 'bold', width: width}}>
+            Features of the app -{' '}
+          </Text>
+        <Text style={{fontSize:18}}>
+          Choose category - Users can choose the category of the
+          body part care you want to add details for. Add details - Users can
+          add all the details of the body care, they have to care. View details
+          - Users can view the details of body care that were added. Edit &
+          Update details - Users can edit and update the details of the body
+          care as and when required.
+        </Text>
+        <View style={{heigt: height * 0.3, width: width, justifyContent:'center', alignItems:'center'}}>
+            <Text style={{color: '#945', fontSize: 20, fontWeight: 'bold'}}>
+            Download the app and take Care of your body more.
+            </Text>
 
-              </Text>
-              <Text>
-
-           <Text style={{fontSize: 19, fontWeight:'bold', width: width, textAlign:'center'}}>This is easy to use,
-            amazing, and ads-free app to help you take care of your body in one
-            place.</Text> 
-            <Text style={{fontSize: 22, fontWeight:'bold', width: width}}>
-            Features of the app - </Text>
-            <Text>
-                </Text> Choose category - Users can choose the
-            category of the body part care you want to add details for. Add
-            details - Users can add all the details of the body care, they have
-            to care. View details - Users can view the details of body care that
-            were added. Edit & Update details - Users can edit and update the
-            details of the body care as and when required. 
-              </Text>
-              <Text style={{color: "#945" , fontSize: 20, fontWeight:'bold'}}>
-              Download the app and take Care of your body more.
-
-              </Text>
-       
+        </View>
       </View>
     </View>
   );
